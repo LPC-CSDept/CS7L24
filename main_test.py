@@ -16,14 +16,14 @@ def test_main_1():
     lines = captureOut.getvalue().split('\n')
     print(lines)
 
-    res = re.search('[\w,\W]*Programming[\w,\W]*', lines[0])
+    res = re.search(r'[\w,\W]*Programming[\w,\W]*', lines[0])
     assert res != None
     print(res.group())
 
-    res = re.search('[\w,\W]*Python[\w,\W]*', lines[1])
+    res = re.search(r'[\w,\W]*Python[\w,\W]*', lines[1])
     assert res != None
     print(res.group())
 
-    res = re.search('[\w,\W]*Programming[\w,\W]*Python[\w,\W]*', lines[2])
+    res = re.search(r'[\w,\W]*Programming[\w,\W]*Python[\w,\W]*', lines[2])
     assert res != None
     print(res.group())
