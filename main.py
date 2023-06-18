@@ -1,11 +1,10 @@
 def main():
+
+    original_str = 'Python Programming'
     ##################################################
     # Comlete your code here
     ##################################################
-    str = 'Python Programming'
-    sub1 = str[:6]
-    sub2 = str[-11:]
-    merged_str = sub2 + ' ' + sub1
+
     print(sub2)
     print(sub1)
     print(merged_str)
